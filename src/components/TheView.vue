@@ -1,27 +1,20 @@
 <template>
   <main>
-    <div class="container py-4">
-      <MyButton class="my-button" id="my-button" @click="sayHello"></MyButton>
-      <LabelInput label="이름" data-id="haha"></LabelInput>
-    </div>
+    <LifecycleHook></LifecycleHook>
   </main>
 </template>
 
 <script>
-import MyButton from './MyButton.vue';
-import LabelInput from './LabelInput.vue';
-
+import LifecycleHook from './LifecycleHook.vue';
 
 export default {
   components: {
-    MyButton, LabelInput
+    LifecycleHook,
   },
   setup () {
-    const sayHello = () => {
-      alert('hi~~~');
-    }
+    
 
-    return {sayHello}
+    return {}
   }
 }
 </script>
